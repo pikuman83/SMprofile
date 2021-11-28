@@ -8,9 +8,6 @@ label input[type="file"] {
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    position: relative;
-    top: -214px;
-    right: -200px;
     text-align: center;
 }
 .pt-3{

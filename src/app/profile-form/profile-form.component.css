@@ -1,0 +1,42 @@
+.form-container{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+mat-form-field{
+    width: 100%;
+    margin: 10px auto;
+}
+mat-radio-group{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    text-align: left;
+}
+mat-radio-button{
+    color: gray;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+.gender{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color: gray;
+}
+button[type="submit"]{
+    padding: 8px;
+    width: 80px;
+    background-color: #76b2c8;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    box-shadow: 0 0 6px rgba(0,0,0,0.16);
+}

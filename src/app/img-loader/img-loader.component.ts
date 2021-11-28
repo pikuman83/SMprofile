@@ -9,6 +9,11 @@ export class ImgLoaderComponent {
 
   @Output() fileEvent:EventEmitter<any> = new EventEmitter(); // Globally available, read file and emits its url.
 
+  /**
+   * Function fired on input type[file]'s change event.
+   * @param input > represents event.target
+   * @returns if valid & not null, emit the file to the parent component else log the error.
+   */
   uploadFile(input: any): void {
     if (input && input.files.length) {
       const file = input.files[0];

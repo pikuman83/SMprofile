@@ -6,16 +6,23 @@
   </div>
   <div class="innercontainer">
     <div class="profile">
+      
       <header>
-        <div class="dp">
-          <img [src]="imgUrl" width="100%" height="100%" accept=".jpg, .jpeg, .png, .svg" alt="Profile picture" aria-label="Profile picture">
+        <div class="img-container">
           <app-img-loader (fileEvent)="imgUrl=$event"></app-img-loader>
         </div>
+        <div class="dp">
+          <img [src]="imgUrl" width="100%" accept=".jpg, .jpeg, .png, .svg" alt="Profile picture" aria-label="Profile picture">
+        </div>
       </header>
+      
+      <div class="profile-data">
+        <app-profile-form></app-profile-form>
+      </div>
+
     </div>
     <div class="location">
       
     </div>
   </div>
 </div>
-<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
