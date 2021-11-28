@@ -7,9 +7,14 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 })
 export class LocationComponent {
 
-  @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow;
-  position: google.maps.LatLngLiteral = {lat: 41.410109, lng: 2.209863};
+  @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow; 
+  position: google.maps.LatLngLiteral = {lat: 41.410109, lng: 2.209863}; //coordenadas placeholder "SM Barcelona"
 
+  /**
+   * @param solicita ubicación
+   * si se obtiene permiso, asigna las nuevas coordenadas a la variable position, la cual esta observada
+   * por varios elementos en la html.
+   */
   getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position: GeolocationPosition) => {
