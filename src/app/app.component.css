@@ -1,0 +1,55 @@
+.container{
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    background-color: #76b2c8;
+    height: 60px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mylogo{
+    position: absolute;
+    left: 20px;
+}
+.innercontainer{
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.profile, .location{
+    width: 45%;
+    min-width: 340px;
+}
+header{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    position: relative;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.16);
+    margin-bottom: 200px;
+}
+.dp{
+    position: absolute;
+    bottom: -120px;
+    right: calc(50% - 120px);
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+}
+.location{
+    border: black 2px dotted;
+}
