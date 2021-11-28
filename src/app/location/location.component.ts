@@ -1,19 +1,14 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-location',
-  templateUrl: './location.component.html',
-  styleUrls: ['./location.component.css']
+  templateUrl: './location.component.html'
 })
-export class LocationComponent implements OnInit {
+export class LocationComponent {
 
   @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow;
   position: google.maps.LatLngLiteral = {lat: 41.410109, lng: 2.209863};
-
-  constructor() { }
-
-  ngOnInit(): void {}
 
   getLocation() {
     if (navigator.geolocation) {

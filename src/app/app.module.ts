@@ -11,8 +11,8 @@ import { ProfileFormComponent } from './profile-form/profile-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import {MatRadioModule} from '@angular/material/radio';
-import {MatRippleModule} from '@angular/material/core';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatRippleModule } from '@angular/material/core';
 import { LocationComponent } from './location/location.component';
 
 @NgModule({
