@@ -1,8 +1,9 @@
 .container{
     width: 100%;
     box-sizing: border-box;
-    background-color: #f5f5f5;
     min-height: 100vh;
+    background-color: #f5f5f5;
+    /* background-color: white; */
 }
 .navbar{
     width: 100%;
@@ -28,15 +29,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
 }
 .profile, .location{
-    width: 45%;
+    width: calc(50% - 30px);
     box-shadow: 0 0 6px rgba(0,0,0,0.16);
     border-radius: 4px;
     overflow: hidden;
 }
 .profile{
-    margin: 20px 10px 20px 20px;
+    margin: 0 10px 0 20px;
+}
+.location{
+    margin: 0 20px 0 10px;
 }
 header{
     background: #0F2027;  /* fallback for old browsers */
@@ -45,7 +51,7 @@ header{
     position: relative;
     height: 300px;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 118px;
 }
 .img-container{
     position: absolute;
@@ -70,13 +76,22 @@ header{
     margin: 0 auto;
 }
 .location{
-    margin: 20px 20px 20px 10px;
-    border: black 2px dotted;
+    padding: 20px;
+    height: fit-content;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 800px) {
+    .innercontainer{
+        padding: 0;
+    }
     .profile, .location{
+        margin: 0 0 4px 0;
         width: 100%;
-        margin: 0;
+        border-radius: 0;
+    }
+    .max-width{
+        max-width: 400px; 
+        margin: 0 auto;
     }
 }

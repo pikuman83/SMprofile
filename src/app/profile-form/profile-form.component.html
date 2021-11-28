@@ -19,7 +19,7 @@
 
     <mat-form-field appearance="legacy">
         <mat-label>Bio</mat-label>
-        <textarea matInput [mat-autosize]="true" rows="4" formControlName="bio"></textarea>
+        <textarea matInput cdkTextareaAutosize rows="4" formControlName="bio"></textarea>
     </mat-form-field> 
 
     <mat-radio-group aria-label="Select an option" formControlName="género" color="primary">
@@ -29,6 +29,6 @@
         <mat-radio-button value="Other">Other</mat-radio-button>
     </mat-radio-group>
 
-    <button type="submit" matRipple>SAVE</button>
+    <button type="submit" class="btn" matRipple>SAVE</button>
 
   </form>
