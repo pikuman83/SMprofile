@@ -5,15 +5,15 @@ import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ImgLoaderComponent } from './img-loader/img-loader.component';
-import { ProfileFormComponent } from './profile-form/profile-form.component';
+import { ImgLoaderComponent } from './Components/img-loader/img-loader.component';
+import { ProfileFormComponent } from './Components/profile-form/profile-form.component';
+import { LocationComponent } from './Components/location/location.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
-import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [

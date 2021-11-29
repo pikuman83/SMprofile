@@ -1,0 +1,30 @@
+.form-container{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+mat-form-field{
+    width: 100%;
+    margin: 10px auto;
+}
+mat-radio-group{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    text-align: left;
+}
+mat-radio-button{
+    color: gray;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+.gender{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    color: gray;
+}
+button[type="submit"]{
+    width: 80px;
+}

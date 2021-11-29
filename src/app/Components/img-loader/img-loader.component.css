@@ -1,0 +1,15 @@
+label input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: block;
+    cursor: pointer;
+    background: #76b2c8;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.pt-3{
+    padding-top: 3px;
+}
