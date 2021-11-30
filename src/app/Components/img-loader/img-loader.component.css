@@ -7,7 +7,7 @@ label input[type="file"] {
     background: #76b2c8;
     width: 30px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 50%;
     text-align: center;
 }
 .pt-3{

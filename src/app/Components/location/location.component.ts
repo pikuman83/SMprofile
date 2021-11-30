@@ -3,12 +3,11 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-location',
-  templateUrl: './location.component.html'
+  templateUrl: './location.component.html',
 })
 export class LocationComponent {
-
-  @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow; 
-  position: google.maps.LatLngLiteral = {lat: 41.410109, lng: 2.209863}; //coordenadas placeholder "SM Barcelona"
+  @ViewChild(MapInfoWindow) infoWindow!: MapInfoWindow;
+  position: google.maps.LatLngLiteral = { lat: 41.410109, lng: 2.209863 }; //coordenadas placeholder "SM Barcelona"
 
   /**
    * @param solicita ubicación
@@ -17,22 +16,23 @@ export class LocationComponent {
    */
   getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position: GeolocationPosition) => {
-        if (position) {
-          this.position = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
+      navigator.geolocation.getCurrentPosition(
+        (position: GeolocationPosition) => {
+          if (position) {
+            this.position = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
           }
-        }
-      },
-        (error: GeolocationPositionError) => console.error(error));
+        },
+        (error: GeolocationPositionError) => console.error(error)
+      );
     } else {
-      alert("Geolocation is not supported by this browser.");
+      alert('Geolocation is not supported by this browser.');
     }
   }
 
   openInfoWindow(marker: MapMarker) {
     this.infoWindow.open(marker);
   }
-
 }
